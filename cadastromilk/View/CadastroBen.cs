@@ -21,6 +21,7 @@ namespace cadastromilk
         }
 
         // ABA CADASTRO //
+
         private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
             ModelCadastro.Nome = tbxNome.Text;
@@ -40,28 +41,84 @@ namespace cadastromilk
         }
 
         // ABA ENCONTRAR //
+
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
+                if (tbNome.Text == "")
+                {
+                    MessageBox.Show("Digite um Nome para a busca", "Atenção");
+                    return;
+                }
+                else
+                {
+                    ModelCadastro.Nome = tbNome.Text.ToString();
+                    BeneficiarioControle beneficiario = new BeneficiarioControle();
+                    
+
+             //   dataGridView1.DataSource = ModelCadastro.Nome;
+                    
+                    
+                }
+
+              //  if (Aluno.Retorno == "False")
+             //   {
+
+             //       limpaTudo();
+             //   }
+
 
         }
 
-        // ABA ALTERAR //
-        private void btnAlterar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Beneficiário Alterado com Sucesso", "Atenção", MessageBoxButtons.OK);
-        }
+            private void TelaBuscaAluno_Load(object sender, EventArgs e)
+            {
+               // btnApagar.Enabled = false;
+              //  btnAlterar.Enabled = false;
+            }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-             
-            
-        }
+            private void btnApagar_Click(object sender, EventArgs e)
+            {
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
+               // Aluno.Codigo = Convert.ToInt32(tbMostraCodigo.Text);
 
-        }
+                //AlunoController alunoController = new AlunoController();
+               // alunoController.deletarAluno();
 
-       
+                //limpaTudo();
+            }
+
+            private void btnAlterar_Click(object sender, EventArgs e)
+            {
+              //  Aluno.Codigo = Convert.ToInt32(tbMostraCodigo.Text);
+                //Aluno.NomeAluno = tbNome.Text;
+              //  Aluno.EmailAluno = tbEmail.Text;
+               // Aluno.FoneAluno = tbFone.Text;
+
+               // AlunoController alunoController = new AlunoController();
+              //  alunoController.alterarAluno();
+
+               // limpaTudo();
+
+            }
+
+            private void limpaTudo()
+            {
+
+               // Aluno.Codigo = 0;
+               // Aluno.NomeAluno = "";
+              //  Aluno.EmailAluno = "";
+               // Aluno.FoneAluno = "";
+              //  tbNome.Clear();
+               // tbEmail.Clear();
+               // tbFone.Clear();
+               // tbMostraCodigo.Clear();
+
+              //  btnApagar.Enabled = false;
+              //  btnAlterar.Enabled = false;
+
+            }
+        
     }
 }
+
+        // ABA ALTERAR //
+

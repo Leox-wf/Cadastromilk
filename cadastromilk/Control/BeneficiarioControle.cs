@@ -114,10 +114,10 @@ namespace cadastromilk.Control
             }
         }
 
-        public static BindingSource visuNomeAluno()
+        public static BindingSource VisuNomeBen()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comandos = new SqlCommand("pBusacrCodigosBen", conexao);
+            SqlCommand comandos = new SqlCommand("pBuscarNomeBen", conexao);
             comandos.CommandType = CommandType.StoredProcedure;
 
             comandos.Parameters.AddWithValue("@nome", "%" + ModelCadastro.Nome + "%");

@@ -29,10 +29,6 @@ namespace cadastromilk
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnBus = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
@@ -64,26 +60,23 @@ namespace cadastromilk
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tbxRespo = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.tbxData = new System.Windows.Forms.TextBox();
             this.tbxCart = new System.Windows.Forms.TextBox();
             this.tbxEnd = new System.Windows.Forms.TextBox();
             this.tbxCPF = new System.Windows.Forms.TextBox();
             this.tbxTelefone = new System.Windows.Forms.TextBox();
             this.tbxNome = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -92,55 +85,14 @@ namespace cadastromilk
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.label4);
-            this.tabPage5.Controls.Add(this.btnEnviar);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(847, 446);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "App";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(341, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 15);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Escreva sua Menssagem";
-            // 
-            // btnEnviar
-            // 
-            this.btnEnviar.Location = new System.Drawing.Point(350, 319);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(134, 49);
-            this.btnEnviar.TabIndex = 1;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(180, 131);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(468, 149);
-            this.textBox3.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -262,7 +214,6 @@ namespace cadastromilk
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.btnBuscar);
-            this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Controls.Add(this.btnAlterar);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
@@ -409,15 +360,6 @@ namespace cadastromilk
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(152, 110);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(518, 75);
-            this.dataGridView2.TabIndex = 1;
-            // 
             // btnAlterar
             // 
             this.btnAlterar.Location = new System.Drawing.Point(543, 354);
@@ -426,17 +368,14 @@ namespace cadastromilk
             this.btnAlterar.TabIndex = 0;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.btnPesquisar);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.tbNome);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -447,7 +386,7 @@ namespace cadastromilk
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(500, 123);
+            this.btnPesquisar.Location = new System.Drawing.Point(486, 123);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(106, 39);
             this.btnPesquisar.TabIndex = 11;
@@ -463,7 +402,6 @@ namespace cadastromilk
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(464, 171);
             this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label3
             // 
@@ -475,50 +413,34 @@ namespace cadastromilk
             this.label3.TabIndex = 9;
             this.label3.Text = "Encontrar Beneficiário";
             // 
-            // textBox2
+            // tbNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 23);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(281, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 23);
-            this.textBox1.TabIndex = 6;
+            this.tbNome.Location = new System.Drawing.Point(294, 123);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(167, 23);
+            this.tbNome.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 162);
+            this.label2.Location = new System.Drawing.Point(109, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 15);
+            this.label2.Size = new System.Drawing.Size(140, 15);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Carteirinha Nº:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(202, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Nome:";
+            this.label2.Text = "Digite o Nome do Titular:";
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.tbxRespo);
-            this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.tbxData);
             this.tabPage1.Controls.Add(this.tbxCart);
             this.tabPage1.Controls.Add(this.tbxEnd);
             this.tabPage1.Controls.Add(this.tbxCPF);
             this.tabPage1.Controls.Add(this.tbxTelefone);
             this.tabPage1.Controls.Add(this.tbxNome);
+            this.tabPage1.Controls.Add(this.label21);
+            this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.btnCadastrar);
             this.tabPage1.Controls.Add(this.label8);
@@ -539,24 +461,6 @@ namespace cadastromilk
             this.tbxRespo.Name = "tbxRespo";
             this.tbxRespo.Size = new System.Drawing.Size(211, 23);
             this.tbxRespo.TabIndex = 28;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(233, 286);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 15);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Responsável:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(191, 257);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(117, 15);
-            this.label20.TabIndex = 26;
-            this.label20.Text = "Data de Nascimento:";
             // 
             // tbxData
             // 
@@ -592,7 +496,6 @@ namespace cadastromilk
             this.tbxTelefone.Name = "tbxTelefone";
             this.tbxTelefone.Size = new System.Drawing.Size(116, 23);
             this.tbxTelefone.TabIndex = 16;
-            this.tbxTelefone.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // tbxNome
             // 
@@ -600,6 +503,24 @@ namespace cadastromilk
             this.tbxNome.Name = "tbxNome";
             this.tbxNome.Size = new System.Drawing.Size(218, 23);
             this.tbxNome.TabIndex = 15;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(233, 286);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(75, 15);
+            this.label21.TabIndex = 27;
+            this.label21.Text = "Responsável:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(191, 257);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(117, 15);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Data de Nascimento:";
             // 
             // label7
             // 
@@ -672,7 +593,6 @@ namespace cadastromilk
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -687,14 +607,11 @@ namespace cadastromilk
             this.Controls.Add(this.tabControl1);
             this.Name = "CadastroBen";
             this.Text = "CadastroBen";
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -707,15 +624,18 @@ namespace cadastromilk
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnEnviar;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button btnBus;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFONE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCPF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnENDERECO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNCARTERINHA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDATANACI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRESPONSAVEL;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TextBox textBox16;
@@ -735,22 +655,23 @@ namespace cadastromilk
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TextBox tbxRespo;
+        private System.Windows.Forms.TextBox tbxData;
         private System.Windows.Forms.TextBox tbxCart;
         private System.Windows.Forms.TextBox tbxEnd;
         private System.Windows.Forms.TextBox tbxCPF;
         private System.Windows.Forms.TextBox tbxTelefone;
         private System.Windows.Forms.TextBox tbxNome;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label8;
@@ -759,16 +680,5 @@ namespace cadastromilk
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFONE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCPF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnENDERECO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNCARTERINHA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDATANACI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRESPONSAVEL;
-        private System.Windows.Forms.TextBox tbxRespo;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox tbxData;
     }
 }
